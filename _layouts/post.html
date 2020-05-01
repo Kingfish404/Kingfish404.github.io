@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<article class="posts">
+  <h1>{{ page.title }}</h1>
+
+  <div clsss="meta">
+    <span class="date">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </span>
+
+    <ul class="tag">
+      {% for tag in page.tags %}
+      <li>
+        <a href="http://{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+          {{ tag }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
+  {% include gitalk.html %}
+
+  {% if site.leancloud.enable %}
+  <span id="http://{{ site.url }}{{ site.baseurl }}{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+   <span class="post-meta-divider"></span>
+   <span class="post-meta-item-text"> 访问量:  </span>
+   <span class="leancloud-visitors-count"></span>
+  </span>
+  {% endif %}
+</article>
+
+<div class="pagination">
+  {% if page.previous.url %}
+    <span class="prev" >
+      <a href="http://{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+        ← 上一篇
+      </a>
+    </span>
+  {% endif %}
+  {% if page.next.url %}
+    <span class="next" >
+      <a href="http://{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+        下一篇 →
+      </a>
+    </span>
+  {% endif %}
+</div>
