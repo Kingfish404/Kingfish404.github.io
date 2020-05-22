@@ -1,2 +1,2 @@
-source 'http://rubygems.org'
+source 'https://mirrors.aliyun.com/rubygems/'
 gem 'github-pages'
