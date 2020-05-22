@@ -69,9 +69,9 @@ disqus:  #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
 gitalk:
-  clientID: 0654fdebc539851e5de7
-  clientSecret: 7f83e49db86483222f41f7d4a8de1daa34e147cc
-  repo: Kingfish404.github.io
+  clientID: 2fe806274cb4f09c52a3
+  clientSecret: 2857f493ac60b0a544a10e9b464299227adb4242
+  repo: kingfish404.github.io
   owner: Kingfish404
 
 # 输入Google Analytics web tracking code
