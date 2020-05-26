@@ -3,6 +3,8 @@ pre, code {
   font-family: $code-font;
   width: 100%;
   overflow: auto;
+  background-color: #333333;
+
   span.n{
     color:rgb(156,220,254);
     font-weight: bold;
@@ -33,7 +35,6 @@ pre.highlight {
   background-color: rgb(51,51,51);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #333333;
 }
 
 .highlight  { background: $oc-gray-0; }
