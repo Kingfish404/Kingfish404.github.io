@@ -130,4 +130,4 @@ exclude:
   - README.md
   - CNAME
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]

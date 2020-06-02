@@ -2,6 +2,7 @@
 layout: post
 title: 本月日常与新学的Django框架笔记
 date: 2020-05-30
+categories: [笔记]
 Author: Kingfish404
 tags: [笔记]
 comments: true
