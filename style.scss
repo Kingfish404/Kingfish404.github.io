@@ -15,7 +15,37 @@
 /* BASE RULES */
 /**************/
 
+// Scroll bar style start
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: $table-background-color;
+  border-radius: 8px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: $base-lighten-color;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: $link-lighten-color;
+}
+
+// Scroll bar end end
+
 html {
+  overflow-y:scroll;
   font-size: $base-font-size;
 }
 

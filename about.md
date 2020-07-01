@@ -4,8 +4,6 @@ title: 关于
 permalink: /about/
 ---
 
-# 简介
-
 目前就读于软件工程专业，练习时长半年多的ACMer
 
 # 比赛获奖
