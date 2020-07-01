@@ -32,7 +32,7 @@ navigation:
     url: /archive
   - name: 分类
     url: /tags
-  - name: 资源
+  - name: 链接
     url: /source
   - name: ABOUT
     url: /about

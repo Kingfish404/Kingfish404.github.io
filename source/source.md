@@ -12,7 +12,7 @@ permalink: /source/
     人数上限:20
     服务器版本号：1.15.2
 
-# 做的Web项目
+# Web项目
 
 ## HelloPython
 
@@ -22,4 +22,35 @@ permalink: /source/
 
 点击这里可以访问：[HelloPython](https://study.kingfish404.cn)
 
-# ...
+# 友链
+
+
+<style>
+
+    button{
+        width:10em;
+        height:3em;
+        font-size:2em;
+        background-color:white;
+        margin:0.5em;
+        cursor:pointer;
+    }
+    .friendLinks{
+        margin-bottom:20px;
+    }
+</style>
+<div class="friendLinks">
+
+<a href="https://xgpax.top" target="_blank">
+<button style="background-color:rgba(37,126,208,0.5)">
+    AX&#039;s blog
+</button>
+</a>
+
+<a href="https://khany.top" target="_blank">
+<button style="background-color:rgba(249,105,14,0.5)">
+    ykhblog 一路向北
+</button>
+</a>
+
+</div>
