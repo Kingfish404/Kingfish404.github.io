@@ -101,7 +101,9 @@ else  return false;
 
 SG函数（Sprague-Grundy）：对于一个给定的有向无环图，定义关于这个图的每个顶点的SG函数如下：
 
->$sg(x)=mex{sg(y) | y是x的后继}$
+>$$
+sg(x)=mex{sg(y) | y是x的后继}
+$$
 
 SG函数的求法：
 
