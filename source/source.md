@@ -6,9 +6,10 @@ permalink: /source/
 
 # Minecraft服务器
 
->一个纯净的生存服务器  
->服务地址：mc.kingfish404.cn  
->可以直接连接，无mod要求,人数上限:10,服务器版本号：1.15.2  
+>一个纯净的生存服务器,无mod要求,人数上限:10,服务器版本号：1.16.1  
+>服务地址：`mc.kingfish404.cn`  
+>2020.07.06 之前的世界的存档: [https://kingfish404.cn/world.zip](https://kingfish404.cn/world.zip)
+
 
 # Web项目
 
