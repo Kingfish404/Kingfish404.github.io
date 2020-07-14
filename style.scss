@@ -32,7 +32,7 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-  background: $base-lighten-color;
+  background: rgb(213, 213, 216);
   border-radius: 8px;
 }
 
@@ -121,7 +121,6 @@ a {
   color: $link-color;
   text-decoration: none;
   cursor: pointer;
-  text-shadow: 1px 1px 2px #CCC;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -389,7 +388,7 @@ div.posts .entry{
     width: 100%;
     height: auto;
     padding-bottom: 12px;
-    position: relative;
+    position: fixed;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
   }
@@ -503,6 +502,8 @@ nav {
 
   @include mobile {
     float: none;
+    top: 115px;
+    position: absolute;
     width: 100%;
   }
 }
