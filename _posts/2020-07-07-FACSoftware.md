@@ -1,18 +1,18 @@
 ﻿---
-layout: page
+layout: post
 title: 免费且跨平台的软件
-date: 2000-01-01
+date: 2020-07-07
 categories: 
-Author:  
-tags: 
-comments: 
+Author:  jinyu
+tags: [收集品]
+comments: true
 toc: 
 pinned: 
 description: Free and Cross-platform software
 ---
 
 收集了一些免费且跨平台的优秀软件，其中大部分为GNU项目下的软件,放在这里以防自己忘记。
-
+<!-- more -->
 ## 绘图软件
 
 ### Gimp

@@ -30,18 +30,18 @@ permalink: /source/
         font-size:2em;
         background-color:white;
         border-radius:5px;
-        margin:0.5em;
+        margin:0.25em;
         cursor:pointer;
     }
     .friendLinks{
-        margin-bottom:20px;
+        margin-bottom:15px;
     }
 </style>
 <div class="friendLinks">
 
 <a href="https://xgpax.top" target="_blank">
 <button style="background-color:rgba(37,126,208,0.2)">
-    AX&#039;s blog
+    AX's blog
 </button>
 </a>
 
@@ -50,5 +50,12 @@ permalink: /source/
     ykhblog 一路向北
 </button>
 </a>
+
+<a href="https://untitled.pw/" target="_blank">
+<button style="background-color:rgba(217,226,240,0.2)">
+    Untitled Spot
+</button>
+</a>
+
 
 </div>
