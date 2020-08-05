@@ -7,7 +7,7 @@ tags: [机器学习]
 comments: true
 toc: true
 description: 2020年初机器学习的一些入门的算法知识
-pinned: true
+pinned: 
 ---
 
 ## 前言
