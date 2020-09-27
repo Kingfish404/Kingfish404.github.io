@@ -31,7 +31,7 @@ permalink: /about/
 
 QQ：1625269399
 
-邮件：[jinyu929@whut.edu.cn](mailto:jinyu929@whut.edu.cn)
+邮件：[jinyu929@whut.edu.cn](mailto:jinyu929@whut.edu.cn){:target="_blank"}
 
 
->本博客基于 [Jekyll](https://jekyllcn.com/) 搭建，部署于Github，由 [LOFFER](https://github.com/FromEndWorld/LOFFER) 主题修改而来，感谢 [FromEndWorld](https://github.com/FromEndWorld) 提供的博客模板
+>本博客基于 [Jekyll](https://jekyllcn.com/){:target="_blank"} 搭建，部署于Github，由 [LOFFER](https://github.com/FromEndWorld/LOFFER){:target="_blank"} 主题修改而来，感谢 [FromEndWorld](https://github.com/FromEndWorld){:target="_blank"} 提供的博客模板
