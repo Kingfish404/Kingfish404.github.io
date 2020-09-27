@@ -109,6 +109,16 @@ h6 {
   color: $base-lighten-color;
 }
 
+header{
+    padding-left: 2px;
+    padding-right: 2px;
+
+    @include mobile{
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+
 p {
   width: 100%;
   overflow-x: auto;
@@ -373,7 +383,7 @@ div.posts .entry{
 //
 
 .wrapper-sidebar {
-  width: 15%;
+  width: 20%;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background-color;
@@ -498,11 +508,11 @@ nav {
 
 .wrapper-content {
   float: right;
-  width: 85%;
+  width: 80%;
 
   @include mobile {
     float: none;
-    top: 115px;
+    top: 140px;
     position: absolute;
     width: 100%;
   }
@@ -511,6 +521,10 @@ nav {
 // Posts
 
 .posts{
+
+    @include mobile{
+        padding-top: 20px;
+    }
 
   .tag {
     display: inline;
@@ -740,7 +754,7 @@ nav {
 }
 
 .mjx-chtml{
-  overflow: initial;
+  overflow: auto;
 }
 
 .tags > .tag {

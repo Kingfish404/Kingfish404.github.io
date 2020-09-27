@@ -4,7 +4,7 @@ title: 关于
 permalink: /about/
 ---
 
-目前就读于软件工程专业，练习时长半年多的ACMer
+目前就读于软件工程专业，练习时长一年的ACMer
 
 # 比赛获奖
 
@@ -15,13 +15,13 @@ permalink: /about/
 # 计算机技能
 
 ## 语言
-* 熟悉：JAVA，C++,Javascript,Python
+* 熟悉：JAVA，C++，Javascript，Python
 * 学习中：Python，Matlab，C++
 
 ## 软件
 * 数据库：MySQL
-* 平台：Microsoft Windows 10 和 Linux （Centos 7.6 & Ubuntu）
-* 框架：Bootstrap,Django,Qt
+* 平台：Microsoft Windows 10 和 Linux （Centos & Ubuntu）
+* 框架：Bootstrap，Django，Qt
 
 # 熟悉的方向
 
