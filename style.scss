@@ -402,7 +402,7 @@ div.posts .entry{
     width: 100%;
     height: auto;
     // padding-bottom: 12px;
-    position: fixed;
+    position: absolute;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
   }
