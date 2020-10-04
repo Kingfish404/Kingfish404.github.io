@@ -4,7 +4,10 @@ title: 关于
 permalink: /about/
 ---
 
-目前就读于软件工程专业，练习时长一年的ACMer
+目前就读于软件工程专业，练习时长一年的ACMer  
+必修绩点4.0+，四级581
+
+热爱生活，喜好游泳，动漫游戏，开发技术，[Token团队](https://itoken.team){:target="_blank"}的PM，有有趣点子欢迎联系我
 
 # 比赛获奖
 
@@ -15,13 +18,13 @@ permalink: /about/
 # 计算机技能
 
 ## 语言
-* 熟悉：JAVA，C++，Javascript，Python
-* 学习中：Python，Matlab，C++
+* 熟悉：JAVA，C++，JavaScript，Python
+* 学习中：Matlab，C++ (博大精深，咱啥也不敢说)，Dart
 
 ## 软件
 * 数据库：MySQL
 * 平台：Microsoft Windows 10 和 Linux （Centos & Ubuntu）
-* 框架：Bootstrap，Django，Qt
+* 框架：Bootstrap，Django，Qt，flutter 
 
 # 熟悉的方向
 
