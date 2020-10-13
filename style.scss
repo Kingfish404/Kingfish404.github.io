@@ -446,7 +446,13 @@ div.posts .entry{
       box-shadow: 0 0 15px rgba(0,0,0,.5);
 
       @include mobile{
-        display: none;
+        position: absolute;
+        width: 4.5em;
+        border-radius: 0;
+        top: 1.5em;
+        margin: 0;
+        left: 3%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
       }
     }
   }
