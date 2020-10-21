@@ -26,10 +26,48 @@ description: 好久没写博客了，现在来补一下
 
 ### Django简介
 
-Django是一个基于Python的Web框架安装只需要一条命令
+Django是一个基于Python的Web框架，只需要一条命令就可以安装好，提供了许多开箱即用的工具
 
-```
+```shell
 pip install django
+# 或者 python3 -m pip instal django
 ```
 
-未完待续...
+使用Django建立新的项目，下面命令会建立一个**mystie**目录
+
+```shell
+django-admin startproject mysite
+# django-admin startproject [项目名]
+# Django默认的项目树
+#    manage.py
+#    mysite/
+#       __init__.py
+#       settings.py
+#       urls.py
+#       asgi.py
+#       wsgi.py
+```
+
+启动Django项目，默认是开发者模式启动，需要在setting.py里修改DEBUG的值并添加ALLOWED_HOSTS来以生产模式部署
+
+```shell
+python manage.py runserver
+# python manage.py runserver [可选端口]
+# python manage.py runserver 8080
+# python manage.py runserver 0:8000
+```
+
+为Django项目添加新的应用
+
+```shell
+python manage.py startapp polls
+# python manage.py startapp [应用名]
+```
+
+更多Django相关的笔记，见我的另外一篇博客。
+
+最后编辑于 2020-10-16
+
+## REF
+
+* [Django官方文档](https://docs.djangoproject.com/)
