@@ -98,9 +98,15 @@ h2 {
     font-size: 20px;
   }
 }
+h2::before{
+    content: "| ";
+}
 
 h3 {
   font-size: 20px;
+  @include mobile {
+    font-size: 18px;;
+  }
 }
 
 h4 {
