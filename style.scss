@@ -77,7 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h5 {
-  text-shadow: 1px 1px 2px #CCC;
   font-weight: bold;
 }
 
@@ -94,12 +93,16 @@ h1 {
 
 h2 {
   font-size: 24px;
+  counter-increment: index;
   @include mobile {
     font-size: 20px;
   }
 }
-h2::before{
-    content: "| ";
+
+.posts h2::before{
+    content: counters(index, '.' ) ' .';
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 h3 {
@@ -380,6 +383,7 @@ img {
 
 div.posts .entry{
   left: -5px;
+  min-height: 75px;
   padding: 0 10px 0 5px;
   border-left: 2px $link-lighten-color solid;
 }
@@ -507,7 +511,6 @@ nav {
     text-align: center;
     font-weight: 300;
     letter-spacing: 8px;
-    text-shadow: 1px 1px 2px #CCC;
 
     @include mobile {
       margin: 0;
@@ -575,6 +578,7 @@ nav {
   border-radius: 5px;
   margin: 10px 0;
   padding: 0 10px;
+  min-height: 210px;
   box-shadow: -2px -2px 2px $background-color;
 
   @include mobile{
@@ -872,7 +876,7 @@ footer {
 
 #map {
     position: fixed;
-    top: 100px;
+    top: 0;
     right: 0;
     width: 85px;
     height: 100%;
