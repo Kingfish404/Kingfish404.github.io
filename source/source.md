@@ -16,7 +16,8 @@ permalink: /source/
 * [AX's blog](https://xgpax.top){:target="_blank"} - 热爱可迎万难
 * [ykhblog 一路向北](https://khany.top){:target="_blank"} - 一蓑烟雨任平生
 * [Untitled Spot](https://untitled.pw/){:target="_blank"} - 未命名小站
-* [陌意随影-一个用于分享编程和人生的博客网](http://moyisuiying.com/){:target="_blank"} - 致我最爱的你
+* [陌意随影](http://moyisuiying.com/){:target="_blank"} - 致我最爱的你
+* [tourhua的博客](https://tourhua.github.io/){:target="_blank"} - tourhua的博客
 
 ## MC服务器 - 暂时关服
 
