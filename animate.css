@@ -3655,6 +3655,26 @@
   animation-delay: 3.3s;
 }
 
+.animated.delay-12 {
+    -webkit-animation-delay: 3.6s;
+    animation-delay: 3.6s;
+}
+
+.animated.delay-13 {
+    -webkit-animation-delay: 3.7s;
+    animation-delay: 3.7s;
+}
+
+.animated.delay-14 {
+    -webkit-animation-delay: 3.8s;
+    animation-delay: 3.8s;
+}
+
+.animated.delay-15 {
+    -webkit-animation-delay: 3.9s;
+    animation-delay: 3.9s;
+}
+
 /* self animate delay end */
 
 .animated.fast {

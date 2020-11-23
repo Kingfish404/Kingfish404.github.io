@@ -10,10 +10,10 @@ layout: default
 {% endif %}
 
 <div class="posts">
-  
+  {% assign post_count = 0 %}
   {% for post in paginator.posts %}
   {% if post.pinned==true %}
-    <article class="animated fadeInLeft post pinned">
+    <article class="animated fadeIn delay-{% increment post_count %} post pinned">
       <h1>
           <span title="pinned">- <i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}#top">{{ post.title }}</a>
       </h1>
@@ -54,11 +54,11 @@ layout: default
           {% assign flag = 1 %}
       {% endif %}
   {% endfor %}
-  {% if flag == 1 %}
+  {% if flag == 1 or post.hide == true %}
       {% continue %}
   {% endif %}
     {% unless post.pinned %}
-    <article class="animated fadeInLeft delay-{{ forloop.index }} post">
+    <article class="animated fadeIn delay-{% increment post_count %} post">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}#top">{{ post.title }}</a>
       </h1>
@@ -83,7 +83,6 @@ layout: default
         {{ post.excerpt | truncate: 200 }}
       </div>
 
-      <!-- <a href="{{ site.baseurl }}{{ post.url }}#top" class="read-more">Read More</a> -->
     </article>
 
     {% endunless %}

@@ -574,12 +574,12 @@ nav {
 }
 
 .posts > .post {
-  border: 1px #f1f3f5 solid;
+  border-top: 1px #f1f3f5 solid;
+  border-left: 1px #f1f3f5 solid;
   border-radius: 5px;
   margin: 10px 0;
   padding: 0 10px;
-  min-height: 210px;
-  box-shadow: -2px -2px 2px $background-color;
+  min-height: 190px;
 
   @include mobile{
     padding-bottom: 0;
@@ -731,6 +731,18 @@ nav {
 }
 
 // Tags
+[id$="-tag"] {
+    display:none;
+}
+[id$="-tag"]:target {
+    display:block;
+    min-height: 250px;
+}
+
+.tag-item a{
+    color: $base-color;
+}
+
 .tags > .label {
   > li:before {
     content: "";
@@ -753,9 +765,12 @@ nav {
       background-color: $tag-index-label-background-color;
       border-radius: 3px;
       min-width: 32%;
+      min-height: 30px;
+      line-height: 30px;
 
       @include mobile{
-        min-width: 32%;
+        min-width: 31%;
+        min-height: auto;
       }
 
       &:hover {
