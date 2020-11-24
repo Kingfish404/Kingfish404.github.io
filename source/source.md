@@ -18,7 +18,7 @@ permalink: /source/
 * [Untitled Spot](https://untitled.pw/){:target="_blank"} - 未命名小站
 * [陌意随影](http://moyisuiying.com/){:target="_blank"} - 致我最爱的你
 * [tourhua的博客](https://tourhua.github.io/){:target="_blank"} - tourhua的博客
-* [DeAnti](http://blog.darkkris.xin/) - DeAnti的博客
+* [DeAnti](http://blog.darkkris.xin/){:target="_blank"} - DeAnti，擅长贝茨的程序员
 
 ## MC服务器 - 暂时关服
 

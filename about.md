@@ -7,11 +7,11 @@ permalink: /about/
 目前就读于软件工程专业，练习时长一年的ACMer  
 必修绩点4.0+，四级581
 
-热爱生活，喜好游泳，动漫游戏，开发技术，[Token团队](https://itoken.team){:target="_blank"}的PM，有有趣点子欢迎联系我
+热爱生活，喜好游泳，游戏动漫，开发技术，[Token团队](https://itoken.team){:target="_blank"}的PM，有有趣点子欢迎联系我
 
 # 比赛获奖
 
-2020 计算机设计大赛 华中赛区 省三等奖
+2020 计算机设计大赛 华中赛区 三等奖
 
 2020 武汉理工大学数学建模大赛 二等奖
 
@@ -35,6 +35,8 @@ permalink: /about/
 QQ：1625269399
 
 邮件：[jinyu929@whut.edu.cn](mailto:jinyu929@whut.edu.cn){:target="_blank"}
+
+Github：[https://github.com/Kingfish404](https://github.com/Kingfish404)
 
 
 >本博客基于 [Jekyll](https://jekyllcn.com/){:target="_blank"} 搭建，部署于Github，由 [LOFFER](https://github.com/FromEndWorld/LOFFER){:target="_blank"} 主题修改而来，感谢 [FromEndWorld](https://github.com/FromEndWorld){:target="_blank"} 提供的博客模板
