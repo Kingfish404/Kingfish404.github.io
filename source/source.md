@@ -19,7 +19,7 @@ permalink: /source/
 * [陌意随影](http://moyisuiying.com/){:target="_blank"} - 致我最爱的你
 * [tourhua的博客](https://tourhua.github.io/){:target="_blank"} - tourhua的博客
 * [DeAnti](http://blog.darkkris.xin/){:target="_blank"} - DeAnti，擅长贝斯的程序员
-* [常青~励む](https://gc-star.github.io/Changqing/){:target="_blank"} - 常青的博客
+* [常青~励む](https://changqing13.cn/){:target="_blank"} - 常青的博客
 
 ## MC服务器 - 暂时关服
 

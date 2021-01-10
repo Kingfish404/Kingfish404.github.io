@@ -10,3 +10,4 @@ _draft/*.java
 node_modules
 .idea
 .vscode
+.*
