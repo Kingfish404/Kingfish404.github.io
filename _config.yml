@@ -6,7 +6,7 @@
 # 注意，“name: XXXX”，冒号后面的空格不可以省略。
 name: Kingfish404
 # 描述/签名
-description: Stay curious,stay naive.</br>  WUT. Jin Yu's Blog. 
+description: Stay curious,stay naive.<br />WUT. Jin Yu's Blog. 
 
 #
 # 下面的设定都是可选的
@@ -54,7 +54,7 @@ footer-links:
   instagram: #https://instagram.com/<>
   linkedin: #https://www.linkedin.com/in/<>
   pinterest: #https://www.pinterest.com/<>
-  rss: #RSS
+  rss: feed #RSS
   stackoverflow: # http://stackoverflow.com/<>
   twitter: # https://www.twitter.com/<your_twitter_username> 
   youtube: # channel/<your_long_string> or user/<user-name>
