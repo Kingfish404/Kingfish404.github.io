@@ -1,6 +1,6 @@
 ---
 layout: page        # page:单页面,不在归档索引;post:有前后页面，索引
-title: 这该死的温柔，居然只存在在我的想象中     # 标题
+title: 日常写点杂七杂八的东西     # 标题
 date: 2020-11-29    # 日期
 categories:         # 集合,暂未使用
 Author:  jinyu      # 作者
