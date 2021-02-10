@@ -7,4 +7,4 @@
 Powered by [Jekyll](https://jekyllcn.com/).
 The theme is from [FromEndWorld](https://github.com/FromEndWorld) named LOFFER
 
-Copyright (c) 2020 Kingfish404
+Copyright (c) 2020-2021 Kingfish404
