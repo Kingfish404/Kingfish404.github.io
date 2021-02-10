@@ -1,0 +1,46 @@
+---
+layout: post
+---
+
+<style>
+    #encrypt_form {
+        text-align: center;
+        margin: 2em;
+    }
+
+    #encrypt_form input {
+        outline: none;
+        margin: 5px;
+        font-size: medium;
+        min-width: 50vw;
+        min-height: 50px;
+    }
+</style>
+
+<div id="encrypted_content">
+    <p>{{ page.description }}</p>
+    <form id="encrypt_form" action="#" method="post">
+        <input id="encrypt_password" type="password" name="password" placeholder="请输入密码" autofocus />
+
+        <input type="submit" value="解密" />
+    </form>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script>
+        document.getElementById('encrypt_form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var passphrase = document.getElementById('encrypt_password').value,
+                encryptedMsg = '{{ page.encrypted }}',
+                encryptedHMAC = encryptedMsg.substring(0, 64),
+                encryptedHTML = encryptedMsg.substring(64),
+                decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+            if (decryptedHMAC !== encryptedHMAC) {
+                alert('密码错误');
+                return;
+            }
+
+            var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+            document.getElementById('encrypted_content').innerHTML = plainHTML;
+        });
+    </script>
+</div>
