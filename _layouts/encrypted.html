@@ -37,7 +37,7 @@ layout: post
             if (decryptedHMAC !== encryptedHMAC) {
                 alert('密码错误');
                 return;
-            }
+            };
 
             var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
             document.getElementById('encrypted_content').innerHTML = plainHTML;

@@ -13,7 +13,7 @@ layout: default
     <ul class="tag">
       {% for tag in page.tags %}
       <li>
-        <a href="http://{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+        <a href="http://{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}-tag">
           {{ tag }}
         </a>
       </li>
@@ -74,7 +74,7 @@ layout: default
 
   $('#share').click(function () {
     $("#copyArea").show(100);
-    copyArea = $("#copyArea")
+    copyArea = $("#copyArea");
     var shareUrl = window.location.href;
     shareUrl = shareUrl.split('?');
     shareUrl = shareUrl[0];
@@ -84,13 +84,13 @@ layout: default
 
     copyArea.val(shareUrl);
 
-    copyArea = $("#copyArea")
+    copyArea = $("#copyArea");
 
-    copyArea.select()
+    copyArea.select();
     if (document.execCommand('copy')) {
       document.execCommand('copy');
 
-      copyArea.val("")
+      copyArea.val("");
       $("#copyArea").val("复制分享链接成功");
       $("#copyArea").show().delay(1000).hide(300);
     }

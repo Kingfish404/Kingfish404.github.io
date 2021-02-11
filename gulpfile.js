@@ -2,7 +2,7 @@
 
 const { config } = require('./config');
 
-console.log(config.password)
+console.log('Encrypt password:',config.password)
 
 var gulp = require('gulp');
 var gutil = require('gulp-util');
@@ -85,7 +85,7 @@ function encrypt(password) {
                 encryptedFrontMatter = 'encrypted: ' + hmac + encryptedBody,
                 result = [delimiter, frontMatter, '\n', encryptedFrontMatter, '\n', delimiter];
 
-            file.contents = new Buffer(result.join(''));
+            file.contents = new Buffer.from(result.join(''));
             this.push(file);
             return callback();
         }
