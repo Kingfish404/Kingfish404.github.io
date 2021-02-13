@@ -4,15 +4,15 @@
 <script>
 var ip = "1.2.3.4";
 var country ="CN";
-//定义一个全局当前IP访问记录对象
+/*定义一个全局当前IP访问记录对象*/
 
 var Counter = AV.Object.extend("Counter");
 var Visitor_record = AV.Object.extend("Visitor_record");
-//调用API获取IP
+/*调用API获取IP*/
 function getVisitorIpAndJudge(Visitor_record) {
-  //note by PriestTomb 2020-01-15
-  //freegeoip获取ip
-  //用json格式获取
+  /*note by PriestTomb 2020-01-15*/
+  /*freegeoip获取ip*/
+  /*用json格式获取*/
   var options = {
     type: 'GET',
     dataType: "json",
@@ -60,7 +60,7 @@ function Judge(Visitor_record){
                 }
             } else {
                 addCount(Counter);
-                // 执行这里，说明LeanCloud中还没有记录此文章
+                /*执行这里，说明LeanCloud中还没有记录此文章*/
                 var newVisitor_record = new Visitor_record();
                 /* Set ACL */
                 var aclip = new AV.ACL();
@@ -87,7 +87,7 @@ function Judge(Visitor_record){
 }
 
 
-// ip
+/*ip*/
 
 function showHitCount(Counter) {
     /* 这是给一个页面中有多篇文章时所调用的，例如博客主界面或者存档界面。
@@ -96,12 +96,12 @@ function showHitCount(Counter) {
     var entries = [];
     var $visitors = $(".leancloud_visitors");
 
-    // 获取页面中所有文章的id（page.url）
+    /*获取页面中所有文章的id（page.url*/
     $visitors.each(function () {
         entries.push($(this).attr("id").trim());
     });
 
-    // 批量查询
+    /* 批量查询 */
     query.containedIn('url', entries);
     query.find().then(function (results) {
         var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
@@ -117,7 +117,7 @@ function showHitCount(Counter) {
             var hits = item.get('hits');
             var element = document.getElementById(url);
 
-            // 显示点击次数
+            /* 显示点击次数 */
             $(element).find(COUNT_CONTAINER_REF).text(hits);
         }
         for (var i = 0; i < entries.length; i++) {
