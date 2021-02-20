@@ -722,11 +722,48 @@ nav {
   a {
     color: $base-color;
   }
+  
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
     font-weight: 300;
     margin-left: 3px;
+    float: right;
+  }
+
+  .tag {
+    display: inline;
+    font-weight: 300;
+    float: right;
+    margin-top: 0;
+    font-size: $small-font-size;
+
+    @include mobile{
+        display: none;
+    }
+
+    li:before {
+      content: '';
+    }
+
+    li {
+      display: inline;
+      margin: 0;
+
+      > a {
+        margin: 3px 3px 3px 0;
+        padding: .5px 4px;
+        color: $base-color;
+        background-color: $tag-index-label-background-color;
+        border-radius: 3px;
+
+
+        &:hover {
+          color: $link-color;
+          background-color:$link-bghv-color;
+        }
+      }
+    }
   }
 }
 

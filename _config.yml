@@ -38,7 +38,7 @@ navigation:
     url: /about
 
 # 每页的文章数
-paginate: 10
+paginate: 18
 
 # 文章简介的区分标记
 excerpt_separator: <!-- more -->
