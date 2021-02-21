@@ -6,13 +6,11 @@ permalink: /source/
 
 # 友链
 
-* [AX's blog](https://xgpax.top){:target="_blank"} - 热爱可迎万难
-* [ykhblog 一路向北](https://khany.top){:target="_blank"} - 一蓑烟雨任平生
-* [Untitled Spot](https://untitled.pw/){:target="_blank"} - 未命名小站
-* [陌意随影](http://moyisuiying.com/){:target="_blank"} - 致我最爱的你
-* [tourhua的博客](https://tourhua.github.io/){:target="_blank"} - tourhua的博客
-* [DeAnti](http://blog.darkkris.xin/){:target="_blank"} - DeAnti，擅长贝斯的程序员
-* [常青~励む](https://changqing13.cn/){:target="_blank"} - 常青的博客
+* [AX's blog](https://xgpax.top){:target="_blank"}
+* [ykhblog 一路向北](https://khany.top){:target="_blank"}
+* [Untitled Spot](https://untitled.pw/){:target="_blank"}
+* [陌意随影](http://moyisuiying.com/){:target="_blank"}
+* [DeAnti](http://blog.darkkris.xin/){:target="_blank"}
 
 要加友链欢迎下方留言
 
