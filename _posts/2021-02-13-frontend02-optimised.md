@@ -1,6 +1,6 @@
 ---
 layout: post        # page:单页面,不在归档索引;post:有前后页面，索引;encrypted:放protected文件夹中的加密文档
-title: 前端笔记 - 性能优化    # 标题
+title: 前端笔记 - 优化    # 标题
 date: 2021-02-13    # 日期
 categories:         # 集合,暂未使用
 Author:  jinyu      # 作者
@@ -105,7 +105,7 @@ observer.observe(image);    // 同上
     - 适用于交互停止时才触发的操作，比如请求预判，要发ajex请求那种，输入反馈
 
 * 节流 throttle
-    - 在规定时间内控制调用函数的频率，一般只出发一次，核心是频率控制，类似游戏的锁帧。
+    - 在规定时间内控制调用函数的频率，一般一个时间段内只出发一次，核心是频率控制，类似游戏的锁帧。
 
 
 ```javascript
@@ -115,11 +115,11 @@ function debounce(fn,delay)
 {
     let timer = null;
     return function () {
-        var content = this, args = arguments;
+        let that = this, args = arguments;
         clearTimeout(timer);
         timer = setTimeout(() => {
             timer = null;
-            fn.apply(content, args);
+            fn.apply(that, args);
         },delay);
     }
 }
@@ -138,26 +138,44 @@ function debounce(fn,delay)
 ```
 
 ``` javascript
-// 节流 
-// 需要实例化
-function throttle(fn,delay)
+// 节流 - 需要实例化
+
+// 立即执行版本-时间段开始时执行
+function throttle(fn,time)
 {
-    let last=null;
+    let isRuning=false;
     return function(){
-        if(last)
-        {
-            let now = Date.now();
-            if(now-last<delay)
-            {
-                return;
-            }
+        if(isRuning){
+          return;
         }else{
-            last = Date.now();
+          isRuning=true;
+          setTimeout(()=>{
+            fn.apply(this,arguments);
+            isRuning=false;
+            setTimeout(()=>{
+              isRuning=false;
+            },time);
+          },0)
         }
-        fn.apply(this,arguments);
     }
 }
 
+
+// 延迟执行版本-时间段结束时执行
+function throttle(fn,time)
+{
+    let isRuning=flase;
+    return function(){
+        if(isRuning){
+          return;
+        }else{
+          setTimeout(()=>{
+            fn.apply(this,arguments);
+            isRuning=false;
+          },time)
+        }
+    }
+}
 var thr = throttle(target_fn,1000);
 ```
 
@@ -165,7 +183,7 @@ var thr = throttle(target_fn,1000);
 
 将代码分割成各种捆绑包，按需要加载或者并行加载。可以可以用于实现较小的包和控制资源负载优先级，如果使用正确，可以对负载时间产生重大影响。
 
-这里就有一种非常常用但是我暂时并没有自己配置过的工具，webpack。
+这里就有一种非常常用但是我暂时并没有自己配置过的工具，webpack。日后自己研究下。
 
 ### 预加载
 
