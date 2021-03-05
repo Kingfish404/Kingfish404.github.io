@@ -2,134 +2,20 @@
 layout: default
 ---
 
-<article class="posts">
-  <h1>{{ page.title }}</h1>
-
-  <div clsss="meta">
-    <span class="date">
-      {{ page.date | date: "%Y-%m-%d" }}
+<div class="post">
+    <h1>{{ page.title }}</h1>
+    <p class="post-date">
+        {{ page.date | date_to_string }}
+        {% if page.author %}
+        -
+        {{ page.author }}
+        {% endif %}
+    </p>
+    {% for tag in page.tags %}
+    <span class="tag">
+        <a href="{{ site.baseurl }}{{ site.data.nav[2].url }}#{{ tag }}">{{ tag }}</a>
     </span>
-
-    <ul class="tag">
-      {% for tag in page.tags %}
-      <li>
-        <a href="http://{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}-tag">
-          {{ tag }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="entry">
+    {% endfor %}
     {{ content }}
-  </div>
-
-
-  <div id="shareDiv">
-    <button id="share" type="button" class="btn btn-primary ">分享</button>
-    <input id="copyArea" type="text" value="" readonly="readonly"/>
-  </div>
-
-  {% include disqus.html %}
-  {% include gitalk.html %}
-
-  {% if site.leancloud.enable %}
-  <span id="http://{{ site.url }}{{ site.baseurl }}{{ page.url }}" class="leancloud_visitors"
-    data-flag-title="{{ page.title }}">
-    <span class="post-meta-divider"></span>
-    <span class="post-meta-item-text"> 访问量: </span>
-    <span class="leancloud-visitors-count"></span>
-  </span>
-  {% endif %}
-</article>
-
-<style>
-  #shareDiv {
-    text-align: center;
-  }
-
-  #shareDiv button {
-    height: 30px;
-    font-size: small;
-    color: #868e96;
-    border: 1px solid #f1f3f5;
-    padding: 5px 20px;
-    background: #f8f9fa;
-  }
-
-  #shareDiv #copyArea {
-    height: 30px;
-  }
-
-  #shareDiv button,#copyArea:focus {
-    border:none;
-    outline: none;
-  }
-</style>
-
-
-<script>
-  $("#copyArea").hide();
-
-  $('#share').click(function () {
-    $("#copyArea").show(100);
-    copyArea = $("#copyArea");
-    var shareUrl = window.location.href;
-    shareUrl = shareUrl.split('?');
-    shareUrl = shareUrl[0];
-    shareUrl = shareUrl;
-
-    copyArea.val("");
-
-    copyArea.val(shareUrl);
-
-    copyArea = $("#copyArea");
-
-    copyArea.select();
-    if (document.execCommand('copy')) {
-      document.execCommand('copy');
-
-      copyArea.val("");
-      $("#copyArea").val("复制分享链接成功");
-      $("#copyArea").show().delay(1000).hide(300);
-    }
-  
-    $('#share').select();
-  })
-</script>
-
-<div class="pagination">
-  {% if page.previous.url %}
-  <span class="prev">
-    <a href="http://{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-      ← 上一篇
-    </a>
-  </span>
-  {% endif %}
-  {% if page.next.url %}
-  <span class="next">
-    <a href="http://{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-      下一篇 →
-    </a>
-  </span>
-  {% endif %}
+    {% include gitalk.html %}
 </div>
-
-<!-- pagemap from https://github.com/lrsjng/pagemap -->
-<canvas id='site_map'></canvas>
-<script src="/js/pagemap.min.js"></script>
-<script>
-    pagemap(document.querySelector('#site_map'), {
-        viewport: null,
-        styles: {
-            'header,footer,section,article': 'rgba(0,0,0,0.08)',
-            'h1,a': 'rgba(0,0,0,0.10)',
-            'h2,h3,h4': 'rgba(0,0,0,0.08)'
-        },
-        back: 'rgba(0,0,0,0.02)',
-        view: 'rgba(0,0,0,0.05)',
-        drag: 'rgba(0,0,0,0.10)',
-        interval: null
-    });
-</script>

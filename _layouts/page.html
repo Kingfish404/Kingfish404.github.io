@@ -2,36 +2,23 @@
 layout: default
 ---
 
-<article class="page">
+<h1>{{ page.title }}</h1>
+<div class="post">
+    {% if page.date %}
+    <p class="post-date">
+        {{ page.date | date_to_string }}
+        {% if page.author %}
+        -
+        {{ page.author }}
+        {% endif %}
+    </p>
+    {% endif %}
 
-  <a name="top"></a><h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-  
-  {% if site.leancloud.enable %}
-  <span id="http://{{ site.url }}{{ site.baseurl }}{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
-   <span class="post-meta-divider"></span>
-   <span class="post-meta-item-text"> 访问量:  </span>
-   <span class="leancloud-visitors-count"></span>
-  </span>
-  {% endif %}
-  
-</article>
-
-<div class="pagination">
-    <span class="prev" >
-      <a href="#top">
-        返回顶部
-      </a>
+    {% for tag in page.tags %}
+    <span class="tag">
+        <a href="{{ site.baseurl }}{{ site.data.nav[2].url }}#{{ tag }}">{{ tag }}</a>
     </span>
-  {% if page.next.url %}
-    <span class="next" >
-      <a href="https://kingfish404.com/tags/#{{page.tags[0]}}">
-        返回目录
-      </a>
-    </span>
-  {% endif %}
+    {% endfor %}
 </div>
-
+{{ content }}
+{% include gitalk.html %}

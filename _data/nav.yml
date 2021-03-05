@@ -1,0 +1,10 @@
+- title: Home
+  url: /
+- title: Posts
+  url: /pages/posts
+- title: Tags
+  url: /pages/tags
+- title: Link
+  url: /pages/link
+- title: About
+  url: /pages/about

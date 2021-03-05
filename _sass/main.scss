@@ -1,0 +1,211 @@
+body{
+    width: calc(100% - 16px);
+    margin: 8px;
+    min-height: calc(100% - 16px);
+    position: absolute;
+    overflow-y: overlay;
+    font-family: "Times New Roman", Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+}
+
+li{
+    list-style: circle;
+}
+
+blockquote{
+    border-left: 3px solid #cbcbcb;
+    background: #f8f8f8;
+    padding: 0.25em 0.25em 0.25em 1em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: 30px;
+
+    span{
+        flex: auto;
+        a{
+            width: 100%;
+            height: 22px;
+            line-height: 20px;
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        .underline{
+            width: 100%;
+            height: 2px;
+            transition: 0.25s all;
+            background-color: black;
+            transform: scale(0);
+        }
+    }
+    span:hover .underline{
+        transform: scale(1);
+    }
+}
+
+footer{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    p{
+        margin: 5px auto;
+    }
+
+    span{
+        margin: 0.5em;
+    }
+
+    a{
+        color: #0031a7;
+        text-decoration: none;
+    }
+}
+
+pre.highlight{
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.container{
+    min-height: 80vh;
+    max-width: 850px;
+    margin: auto;
+    padding: 0 2.5em;
+    @include mobile{
+        padding: 0 1em;
+    }
+}
+
+.content{
+    min-height: calc(100vh - 30px);
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 4em;
+        margin: auto;
+        transition: all 1s;
+        word-break: break-word;
+    }
+    h1:hover{
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: large;
+        max-width: 500px;
+        margin: 1em auto;
+        word-break: break-word;
+    }
+    .main{
+        margin: 0 0 50px;
+    }
+}
+
+.post-list{
+    max-width: 960px;
+    padding: 0;
+    margin: auto;
+
+    h2{
+        font-weight: normal;
+    }
+
+    .div-line{
+        border-bottom: 2px solid rgba(109, 109, 109, 0.445);
+
+        .underline{
+            width: 100%;
+            height: 2px;
+            transition: 0.5s all ease-in-out;
+            background-color: black;
+            transform: scale(0);
+            bottom: -2px;
+            position: relative;
+        }
+    }
+
+    .post-index{
+        list-style: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        h2{
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        p{
+            margin: 5px;
+            font-size: medium;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5em;
+            max-height: 1.5em;
+        }
+        .post-excerpt{
+            overflow: hidden;
+        }
+    }
+    .post-index:hover .underline{
+        transform: scale(1);
+    }
+
+    .post-archive{
+        margin: 0.5em auto;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        display: contents;
+        font-size: medium;
+        a{
+            text-decoration: none;
+            color: #0031a7;
+        }
+    }
+
+    a{
+        line-height: 1.5em;
+    }
+
+    .post-time{
+        float: right;
+        line-height: 1.5em;
+    }
+}
+
+.tag{
+    float: right;
+    margin:0 0.25em;
+    user-select: none;
+    line-height: 1.5em;
+    padding: 0 0.5em;
+    background-color: rgba(128, 128, 128, 0.05);
+    border-radius: 0.25em;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    @include mobile{
+        display: none;
+    }
+}
+

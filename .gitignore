@@ -1,20 +1,6 @@
-# 博客内容文件
-CNAME
 _site
-_draft/*.md
-_draft/*.py
-_draft/*.cpp
-_draft/*.c
-_draft/*.java
-_protected/*.md
-
-# 项目设置文件
 .sass-cache
 .jekyll-cache
-node_modules
-.idea
-.vscode
-.*
-
-# 加密配置文件
-config.js
+.jekyll-metadata
+vendor
+Gemfile.lock

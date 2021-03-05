@@ -1,10 +1,20 @@
-# This My personal blog
+# Pure blog
 
-## Welcome
+A blog power by Jekyll,Pure and clean.
 
-#### by the way,now I just a student keep learning at my university
+## Usage
 
-Powered by [Jekyll](https://jekyllcn.com/).
-The theme is from [FromEndWorld](https://github.com/FromEndWorld) named LOFFER
+put your post in `_posts`,named it as `yyyy-MM-dd-xxxx-xxxx.md`.
 
-Copyright (c) 2020-2021 Kingfish404
+## Run
+
+```bash
+# dev running
+bundle exec jekyll serve -l
+# final build
+bundle exec jekyll build
+```
+
+## Thanks
+
+* [jekyllrb](https://jekyllrb.com/)

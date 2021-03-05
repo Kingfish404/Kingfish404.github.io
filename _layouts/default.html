@@ -1,40 +1,11 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="zh-CN">
-{% include head.html %}
-
-<body>
+<!doctype html>
+<html lang="{{ site.lang }}">
+  {% include head.html %}
+  <body>
     {% include nav.html %}
-
-    {% if page.toc==true %}
-    <aside class="toc">
-        {% include toc.html html=content %}
-    </aside>
-    {% endif %}
-
-    <div id="main" role="main" class="wrapper-content">
-        <div class="container">
-            {{ content }}
-        </div>
+    <div class="container">
+        {{ content }}
     </div>
-
-    
-
-    {% if page.toc==true %}
-    <script>
-        document.getElementById("main").classList.add("withtoc");
-    </script>
-    {% endif %}
-
-    <div class="wrapper-footer-mobile">
-        <footer class="footer">
-            {% include footer.html %}
-        </footer>
-    </div>
-
-    {% include leancloud-analytics.html %}
-</body>
-
+    {% include footer.html %}
+  </body>
 </html>

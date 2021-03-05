@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 链接
-permalink: /source/
+title: Link
+comments: true
 ---
 
-# 友链
+## 友链
 
 * [AX's blog](https://xgpax.top){:target="_blank"}
 * [ykhblog 一路向北](https://khany.top){:target="_blank"}
@@ -14,7 +14,7 @@ permalink: /source/
 
 要加友链欢迎下方留言
 
-# 我的
+## 我的
 
 ### [HelloPython](https://study.kingfish404.cn){:target="_blank"}
 一个Python在线实验平台,文档与Python在线运行
@@ -32,5 +32,3 @@ permalink: /source/
 >2020.07.06 之前的世界的存档: [https://kingfish404.cn/world.zip](https://kingfish404.cn/world.zip)
 
 ## 留言板
-
-{% include gitalk.html %}

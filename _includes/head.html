@@ -1,70 +1,10 @@
 <head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} - Blog</title>
-
-  <meta charset="utf-8" />
-  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-  <meta name="baidu-site-verification" content="VWZW5ptTtx" />
-
-  {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt| strip_html }}" />
-  <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-  {% else %}
-  <meta name="description" content="{{ site.description }}">
-  <meta property="og:description" content="{{ site.description }}" />
-  {% endif %}
-  <meta name="author" content="{{ site.name }}" />
-
-  {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="twitter:title" content="{{ page.title }}" />
-
-  {% endif %}
-  <!-- {% include meta.html %} -->
-
-  <!-- Async font loading -->
-  <script>
-// TODO Fix bug
-// 此处的字体无法加载，链接失效
-// 2020-08-05
-  // window.WebFontConfig = {
-  //     custom: {
-  //         families: ['Spoqa Han Sans:100,300,400,700'],
-  //         urls: ['https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
-  //     },
-  //     timeout: 60000
-  // };
-  // (function(d) {
-  //     var wf = d.createElement('script'), s = d.scripts[0];
-  //     wf.src = 'https://fdn.geekzu.org/ajax/ajax/libs/webfont/1.6.16/webfont.js';
-  //     s.parentNode.insertBefore(wf, s);
-  // })(document);
-  </script>
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="feed.xml" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/animate.css" />
-  <link rel="icon" href="/{{ site.favicon }}">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
-  <script src="/js/gitalk.min.js"></script>
-  <!-- <script src="https://kit.fontawesome.com/56f7faf3f4.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
-    type="text/javascript"></script>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        inlineMath: [['$','$']]
-      }
-    });
-  </script>
-  <!-- jquery-3.4.1 -->
-  <script src="/js/jquery-3.4.1.min.js"></script>
-  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% feed_meta %}
+    {% seo title=false %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/vs.css">
+  </head>
