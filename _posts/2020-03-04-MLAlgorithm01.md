@@ -2,7 +2,7 @@
 layout: post
 title: 机器学习算法入门笔记
 date: 2020-03-04
-Author: Kingfish404
+author: Kingfish404
 tags: [机器学习]
 comments: true
 toc: true

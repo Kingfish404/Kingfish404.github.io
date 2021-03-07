@@ -3,7 +3,7 @@ layout: encrypted        # page:单页面,不在归档索引;post:有前后页�
 title: 前端加密文件     # 标题
 date: 2021-02-10    # 日期
 categories:         # 集合,暂未使用
-Author:  jinyu      # 作者
+author:  jinyu      # 作者
 tags: [Document]              # 标签，博客分类页面显示
 comments:           # bool,是否可以评论
 toc:                # bool,是否有目录

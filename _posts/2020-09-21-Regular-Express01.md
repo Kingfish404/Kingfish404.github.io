@@ -3,7 +3,7 @@ layout: post        # page:单页面,不在归档索引;post:有前后页面，�
 title: Regular Express - 正则表达式     # 标题
 date: 2020-09-21    # 日期
 categories:         # 集合,暂未使用
-Author:  jinyu      # 作者
+author:  jinyu      # 作者
 tags: [Document,笔记]              # 标签，博客分类页面显示
 comments: true      # bool,是否可以评论
 toc:                # bool,是否有目录

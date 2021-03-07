@@ -2,7 +2,7 @@
 layout: post
 title: ACM-博弈论基础
 date: 2020-02-17
-Author: Kingfish404
+author: Kingfish404
 tags: [ACM]
 comments: true
 toc: true

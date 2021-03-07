@@ -2,7 +2,7 @@
 layout: page
 title: Markdown语法简介
 date: 2019-07-16
-Author: Shengbin 
+author: Shengbin 
 tags: [Document]
 comments: true
 toc: true

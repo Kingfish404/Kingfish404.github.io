@@ -3,7 +3,7 @@ layout: post        # page:单页面,不在归档索引;post:有前后页面,索
 title: 智能算法-模拟退火-粒子群-鱼群算法
 date: 2020-08-05
 categories: 
-Author:  jinyu
+author:  jinyu
 tags:               
 comments: true           # bool,是否可以评论
 toc:                # bool,是否有目录

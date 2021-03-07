@@ -3,7 +3,7 @@ layout: post
 title: 免费且跨平台的软件
 date: 2020-07-07
 categories: 
-Author:  jinyu
+author:  jinyu
 tags: [收集品]
 comments: true
 toc: 
