@@ -4,6 +4,7 @@ title: 用typescript实现八大排序-递增
 tags: [前端,笔记] 
 author: jinyu
 desc: typescript真好用，让代码的可维护性和可读性大增
+comments: true
 ---
 
 用`typescript`实现八大排序算法，分别是：

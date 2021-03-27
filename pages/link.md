@@ -10,7 +10,7 @@ comments: true
 * [ykhblog 一路向北](https://khany.top){:target="_blank"}
 * [Untitled Spot](https://untitled.pw/){:target="_blank"}
 * [陌意随影](http://moyisuiying.com/){:target="_blank"}
-* [DeAnti](http://blog.darkkris.xin/){:target="_blank"}
+* [DeAnti](http://deanti.wang/){:target="_blank"}
 * [日暮天无云](https://shandianchengzi.gitee.io/){:target="_blank"}
 
 要加友链欢迎下方留言

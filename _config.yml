@@ -30,6 +30,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  Kingfish404
 
+descs:
+  - 在遭遇人生低谷的时候 不要灰心 至少曾经有人被你的魅力所吸引 曾经是，以后也会是
+  - Stay curious,stay naive. WUT. Jin Yu's Blog.
+  - 竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生
+  - 这一切都会过去
+  - hello world!
+
 max_posts: 10   # the max posts num display in Home page
 
 # gitalk setting,enter clientID to enable
