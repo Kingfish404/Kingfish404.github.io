@@ -49,12 +49,14 @@ nav{
         .underline{
             width: 100%;
             height: 2px;
+            visibility: hidden;
             transition: 0.25s all;
             background-color: black;
             transform: scale(0);
         }
     }
     span:hover .underline{
+        visibility: visible;
         transform: scale(1);
     }
 }
@@ -144,6 +146,7 @@ pre.highlight{
     #desc{
         border-radius: 0.5em;
         padding: 0.5em;
+        max-width: 325px;
     }
 
     .main{

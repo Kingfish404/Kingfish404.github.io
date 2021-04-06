@@ -32,6 +32,12 @@ comments: true
 var test_arr: Array<number> = [2, 1, 0, 4, 7, 6, 3, 9, 10, 4, 1, 5, 3, 5, 7];
 ```
 
+## Array.prototype.sort()
+
+这个是JS的Array对象默认的排序，原地算法。
+
+默认的比较方式是字符串比较，类似于`(a,b)=>{return String(a)>String(b)}`，所以如果对于纯数字数组，可能会出现预期外的结果。
+
 ```typescript
 // JS默认的排序
 function defaultSort(arr: Array<number>): Array<number> {
@@ -39,6 +45,10 @@ function defaultSort(arr: Array<number>): Array<number> {
     return final.sort(function (a: any, b: any) { return a - b; });
 }
 ```
+
+## 插入排序
+
+插入排序是维护一个长度为i的有序序列，每次i自增1，为下标为i的数向前找插入位置。
 
 ```typescript
 // 插入排序 insertSort
@@ -65,6 +75,10 @@ function insertSort(arr: Array<number>): Array<number> {
 }
 ```
 
+## 希尔排序
+
+分步长的插入排序，第一个能到`nlog(n)`复杂度的排序算法。
+
 ```typescript
 // 希尔排序 shellSort
 function shellSort(arr: Array<number>): Array<number> {
@@ -85,6 +99,9 @@ function shellSort(arr: Array<number>): Array<number> {
     return final;
 }
 ```
+## 选择排序
+
+和插入排序类似，维护长度为i的有序序列，不过是向后寻找i位置合适的值。时间复杂度固定为`n^2`。
 
 ```typescript
 // 选择排序 selectionSort
@@ -104,6 +121,9 @@ function selectionSort(arr: Array<number>): Array<number> {
     return final;
 }
 ```
+## 堆排序
+
+维护一个树结构的最小堆或者最大堆，每次取堆顶即可。
 
 ```typescript
 // 堆排序 heapSort
@@ -142,6 +162,10 @@ function heapSort(arr: Array<number>): Array<number> {
 }
 ```
 
+## 冒泡排序
+
+典型的算法。
+
 ```typescript
 // 冒泡排序 bubbleSort
 function bubbleSort(arr: Array<number>): Array<number> {
@@ -166,6 +190,10 @@ function bubbleSort(arr: Array<number>): Array<number> {
     return final;
 }
 ```
+
+## 快速排序
+
+分而治之的排序，每次用一个值分出两个集合，再对子集合进行分类，直到最小。
 
 ```typescript
 // 快速排序，quickSort
@@ -203,6 +231,9 @@ function quickSort(arr: Array<number>): Array<number> {
     return final;
 }
 ```
+## 归并排序
+
+分治算法，每次都得到两个子有序序列，再合并。
 
 ```typescript
 // 归并排序 merginSort
@@ -245,6 +276,10 @@ function merginSort(arr: Array<number>): Array<number> {
     return trueMerginSort(final, 0, final.length - 1);
 }
 ```
+
+## 基数排序
+
+非常类似桶排序，每对根据同一个位对上的值进行排序，最后合并。
 
 ```typescript
 // 基数排序 radixSort
@@ -289,9 +324,12 @@ function radixSort(arr: Array<number>, radix: number = 10): Array<number> {
 }
 ```
 
-## 测试函数
+## 测试
 
 ```typescript
+
+var test_arr: Array<number> = [2, 1, 0, 4, 7, 6, 3, 9, 10, 4, 1, 5, 3, 5, 7];
+
 console.log('test arr:', test_arr, test_arr.length);
 
 console.log('defaultSort', defaultSort(test_arr));
