@@ -8,7 +8,7 @@ tags: [Daily]              # 标签，博客分类页面显示
 comments: [false]          # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description: Deep down some where
+desc: Deep down some where
 hide: true
 ---
 

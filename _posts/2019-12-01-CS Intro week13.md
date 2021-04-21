@@ -4,7 +4,7 @@ title: 计算机专业导论-周总结3-硬件与网络
 date: 2019-12-01
 categories: 计算机专业导论
 tags: [专业导论]
-description: 计算机知识，Computer Info
+desc: 计算机知识，Computer Info
 ---
 
 

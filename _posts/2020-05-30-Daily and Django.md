@@ -7,7 +7,7 @@ author: Kingfish404
 tags: [笔记]
 comments: true
 toc: true
-description: 好久没写博客了，现在来补一下
+desc: 好久没写博客了，现在来补一下
 ---
 
 ## Daily

@@ -8,7 +8,7 @@ tags: [前端, 笔记]           # 标签，博客分类页面显示
 comments: true      # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description: parameter是函数定义时的参数，argument是函数调用时的参数。传值调用，传引用调用。
+desc: parameter是函数定义时的参数，argument是函数调用时的参数。传值调用，传引用调用。
 hide: 
 ---
 

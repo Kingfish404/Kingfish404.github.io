@@ -8,7 +8,7 @@ tags: [笔记]              # 标签，博客分类页面显示
 comments: true          # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description: 
+desc: 
 hide: 
 ---
 

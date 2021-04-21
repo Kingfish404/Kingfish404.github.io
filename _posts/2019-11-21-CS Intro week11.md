@@ -4,7 +4,7 @@ title: 计算机专业导论-周总结1-信息
 date: 2019-11-21
 categories: 计算机专业导论
 tags: [专业导论]
-description: 计算机知识，Computer Info
+desc: 计算机知识，Computer Info
 ---
 
 <!-- more -->

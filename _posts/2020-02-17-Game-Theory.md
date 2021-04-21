@@ -6,7 +6,7 @@ author: Kingfish404
 tags: [ACM]
 comments: true
 toc: true
-description: 计算机知识，ACM
+desc: 计算机知识，ACM
 ---
 
 ## 博弈论基础

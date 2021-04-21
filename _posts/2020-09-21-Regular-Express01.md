@@ -8,7 +8,7 @@ tags: [Document,笔记]              # 标签，博客分类页面显示
 comments: true      # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description: 正则表达式的文档+学习笔记
+desc: 正则表达式的文档+学习笔记
 ---
 
 **正则表达式**(Regular Expression/regex/regexp)，又称**正规表示式**,或者简称**正则式**，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。

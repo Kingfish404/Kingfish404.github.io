@@ -8,7 +8,7 @@ tags: [ACM,笔记]              # 标签，博客分类页面显示
 comments: true          # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description:  花式做了下N皇后问题，感觉比别的题有意思，写一下记录
+desc:  花式做了下N皇后问题，感觉比别的题有意思，写一下记录
 hide: 
 ---
 

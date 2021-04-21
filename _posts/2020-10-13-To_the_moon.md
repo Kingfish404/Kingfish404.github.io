@@ -8,7 +8,7 @@ tags: [Essay]              # 标签，博客分类页面显示
 comments: true      # bool,是否可以评论
 toc:                # bool,是否有目录
 pinned:             # bool,是否置顶
-description: 去月球
+desc: 去月球
 ---
 
 这是一个挺复杂的故事，我理理思路写下，可能挺长的，但也是一个非常简单的故事

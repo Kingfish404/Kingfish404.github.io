@@ -8,7 +8,7 @@ tags: [前端,笔记]              # 标签，博客分类页面显示
 comments: true          # bool,是否可以评论
 toc: true               # bool,是否有目录
 pinned: true            # bool,是否置顶
-description: 新年的第一篇，2021继续学习。前几天给博客上了代码压缩，Lighthouse测了下，感觉不错，就来写下性能优化
+desc: 新年的第一篇，2021继续学习。前几天给博客上了代码压缩，Lighthouse测了下，感觉不错，就来写下性能优化
 hide: 
 ---
 

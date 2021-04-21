@@ -8,7 +8,7 @@ tags: [收集品]
 comments: true
 toc: 
 pinned: 
-description: Free and Cross-platform software
+desc: Free and Cross-platform software
 ---
 
 收集了一些免费且跨平台的优秀软件，其中大部分为GNU项目下的软件,放在这里以防自己忘记。
