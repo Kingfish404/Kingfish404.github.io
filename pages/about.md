@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-目前就读于软件工程，18级，常用ID Kingfish404，练习时长一年的ACMer  
+目前就读于软件工程，18级，常用ID Kingfish404，练习时长一年的ACMer，~~全栈开发~~  
 必修绩点4.0+，四级581，六级449，四六级口语均为B
 
 热爱生活，喜好游泳，游戏动漫，开发技术，[Token团队](https://itoken.team){:target="_blank"}的PM+前端开发，有有趣点子欢迎联系我
