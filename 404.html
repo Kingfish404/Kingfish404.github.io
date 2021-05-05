@@ -1,38 +1,94 @@
----
-title: 404
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<style type="text/css" media="screen">
-    .container {
-        margin: 10px auto;
-        max-width: 600px;
-        text-align: center;
-        display: table;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notice about my blog move to https://blog.kingfish404.cn/">
+    <meta name="theme-color" content="#ffffff">
+    <title>Blog Relocation Notice</title>
+    <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .container-cell {
-        display: table-cell;
-        vertical-align: middle;
-    }
+        .notice {
+            padding: 0 2em;
+        }
 
-    h1 {
-        margin: 30px 0;
-        font-size: 4em;
-        line-height: 1;
-        letter-spacing: -1px;
-        transition:all 1s;
-    }
-    h1:hover{
-        letter-spacing: 2px;
-    }
-</style>
+        .friends,
+        footer {
+            text-align: center;
+        }
 
-<div class="container">
-    <div class="container-cell">
-        <h1>404</h1>
-        <p><strong>Page not found :(</strong></p>
-        <p>The requested page could not be found.</p>
+        .friends li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>博客迁移 - Migrated Notice</h1>
+        <hr />
+    </header>
+    <div class="content">
+        <div class="notice">
+            <p>博客已经迁移到新的域名
+                <a id="url" href="https://blog.kingfish404.cn/">https://blog.kingfish404.cn</a>
+                <button class="btn" data-clipboard-target="#url">
+                    复制到剪切板
+                </button>
+            </p>
+            <p>The blog has been migrated to a new domain name
+                <a id="url_en" href="https://blog.kingfish404.cn/">https://blog.kingfish404.cn</a>
+                <!-- Trigger -->
+                <button class="btn" data-clipboard-target="#url_en">
+                    Copy to clipboard
+                </button>
+            </p>
+            <p>继续访问<a href="/home">原博客</a></p>
+            <p>Continue to visit <a href="/home">the original blog</a></p>
+        </div>
+        <div class="friends">
+            <p>欢迎造访我的朋友们</p>
+            <p>Welcome to visit my friends</p>
+            <ul>
+                <li><a href="https://xgpax.top" target="_blank" rel="noopener">AX’s blog</a></li>
+                <li><a href="https://khany.top" target="_blank" rel="noopener">ykhblog 一路向北</a></li>
+                <li><a href="https://untitled.pw/" target="_blank" rel="noopener">Untitled Spot</a></li>
+                <li><a href="http://moyisuiying.com/" target="_blank" rel="noopener">陌意随影</a></li>
+                <li><a href="http://deanti.wang/" target="_blank" rel="noopener">DeAnti</a></li>
+                <li><a href="https://shandianchengzi.gitee.io/" target="_blank" rel="noopener">日暮天无云</a></li>
+                <li><a href="http://blog.wutortoise.cn/" target="_blank" rel="noopener">Tortoise</a></li>
+                <li><a href="https://www.dingshiyi.top" target="_blank" rel="noopener">Loneliness</a></li>
+            </ul>
+        </div>
+        <hr />
     </div>
-</div>
+
+    <footer>
+        <p>
+            Last update time
+            <time>2020-05-04</time>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.btn');
+    </script>
+</body>
+
+</html>
