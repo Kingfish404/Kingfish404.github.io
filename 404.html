@@ -18,6 +18,7 @@
             justify-content: center;
             height: 100%;
         }
+
         .content {
             display: flex;
             flex-direction: column;
@@ -42,28 +43,29 @@
 <body>
     <header>
         <h1>博客迁移 - Migrated Notice</h1>
-        <hr />
+        <br />
     </header>
     <div class="content">
         <div class="notice">
-            <p>博客已经迁移到新的域名
+            <p>博客已经迁移到
+                <a id="url" href="https://blog.kingfish404.cn/">新的域名</a>
                 <a id="url" href="https://blog.kingfish404.cn/">https://blog.kingfish404.cn</a>
                 <button class="btn" data-clipboard-target="#url">
                     复制到剪切板
                 </button>
             </p>
-            <p>The blog has been migrated to a new domain name
+            <p>继续访问<a href="/home">原博客</a></p>
+            <p>The blog has been migrated to
+                <a id="url_en" href="https://blog.kingfish404.cn/">a new domain name</a>
                 <a id="url_en" href="https://blog.kingfish404.cn/">https://blog.kingfish404.cn</a>
                 <!-- Trigger -->
                 <button class="btn" data-clipboard-target="#url_en">
                     Copy to clipboard
                 </button>
             </p>
-            <p>继续访问<a href="/home">原博客</a></p>
             <p>Continue to visit <a href="/home">the original blog</a></p>
         </div>
         <div class="friends">
-            <p>欢迎造访我的朋友们</p>
             <p>Welcome to visit my friends</p>
             <ul>
                 <li><a href="https://xgpax.top" target="_blank" rel="noopener">AX’s blog</a></li>
